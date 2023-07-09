@@ -1,0 +1,16 @@
+CI/CD
+to generate report in cucumber
+Steps:
+1. add plugins in pom.xml-help us in reporting mechanism
+    maven SureFire
+
+2.from the runner class we state the type of report on plugins
+tag plugin={"pretty","html:target/cucumber.html","json:target/cucumber.json"}
+
+What is the purpose of having a failedRunner?
+we want to rerun test to make sure the cause of failure.
+
+What is Maven life cycle?
+it is the phases in maven build system.
+the test execute the test cases indicated in the
+runner class
